@@ -1,29 +1,24 @@
 import * as fs from 'fs/promises';
 import * as jwt from 'jsonwebtoken';
-import IUser from '../interface/IUser';
 
 class Token {
-  private static secret: string;
-  private static token: string;
-  private static decoded: string | jwt.JwtPayload;
-
-  static async tokenGen(user: IUser) {
-    this.secret = await fs.readFile('jwt.evaluation.key', 'utf-8');
-    this.token = jwt.sign({ user }, this.secret, {
+  tokenGen = async (user: string) => {
+    const jwtToken = await fs.readFile('jwt.evaluation.key', 'utf-8');
+    const token = jwt.sign({ user }, jwtToken, {
       expiresIn: '1d',
       algorithm: 'HS256',
     });
 
-    return this.token;
-  }
+    return token;
+  };
 
-  static async authToken(token: string) {
-    this.secret = await fs.readFile('jwt.evaluation.key', 'utf-8');
-    const { user } = await jwt
-      .verify(token, this.secret) as { user: IUser, iat: number, exp: number };
-    this.decoded = user;
-    return this.decoded;
-  }
+  tokenVerify = async (authorization: string) => {
+    const jwtToken = await fs.readFile('jwt.evaluation.key', 'utf-8');
+    const verified = jwt.verify(authorization, jwtToken);
+    const findRole = Object.values(verified);
+    const role = findRole.find((item) => (typeof item) === 'string');
+    return role;
+  };
 }
 
 export default Token;

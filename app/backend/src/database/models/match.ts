@@ -2,6 +2,7 @@ import { Model, INTEGER, BOOLEAN } from 'sequelize';
 import db from '.';
 
 class Match extends Model {
+  id: number;
   homeTeam: number;
   homeTeamGoals: number;
   awayTeam: number;

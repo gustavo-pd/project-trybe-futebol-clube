@@ -1,38 +1,38 @@
 import { NextFunction, Request, Response } from 'express';
-import * as bcrypt from 'bcryptjs';
+import { compare } from 'bcryptjs';
 import Users from '../database/models/user';
-import IUser from '../interface/IUser';
 import Token from '../auth/Token';
 
-class Login {
-  private static _user: IUser;
+export default class Login {
+  private jwtToken = new Token();
 
-  static async UserLogin(req: Request, res: Response, _next: NextFunction): Promise<Response> {
+  userLogin = async (req: Request, res: Response, _next: NextFunction) => {
     const { email, password } = req.body;
-    this._user = await Users.findOne({ where: { email } }) as IUser;
-    const validatePassword = await bcrypt.compare(password, this._user.password);
-    const token = await Token.tokenGen(this._user);
-    if (!this._user) {
-      return res.status(401).json({ message: 'Invalid e-mail' });
+    const findUser = await Users.findOne({ where: { email } });
+    if (!findUser) {
+      return res.status(401).json({ message: 'Incorrect email or password' });
     }
+    const validatePassword = await compare(password, findUser.password);
     if (!validatePassword) {
-      return res.status(401).json({ message: 'Invalid password' });
+      return res.status(401).json({ message: 'Incorrect email or password' });
     }
     const user = {
-      id: this._user.id,
-      username: this._user.username,
-      role: this._user.role,
+      id: findUser.id,
+      username: findUser.username,
+      role: findUser.role,
       email,
     };
+
+    const token = await this.jwtToken.tokenGen(user.role);
     return res.status(200).json({ user, token });
-  }
+  };
 
-  static async validateLogin(req: Request, res: Response, _next: NextFunction): Promise<Response> {
-    const token = req.headers.authorization as string;
-    const { role } = await Token.authToken(token);
-
-    return res.status(200).send(role);
-  }
+  validateLogin = async (req: Request, res: Response, _next: NextFunction) => {
+    const { authorization } = req.headers;
+    if (!authorization) {
+      return res.status(401).json({ message: 'Token not found' });
+    }
+    const verifyTk = await this.jwtToken.tokenVerify(authorization);
+    return res.status(200).send(verifyTk);
+  };
 }
-
-export default Login;
