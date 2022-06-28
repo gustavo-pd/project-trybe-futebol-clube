@@ -3,7 +3,7 @@ import { compare } from 'bcryptjs';
 import Users from '../database/models/user';
 import Token from '../auth/Token';
 
-export default class Login {
+class Login {
   private jwtToken = new Token();
 
   userLogin = async (req: Request, res: Response, _next: NextFunction) => {
@@ -36,3 +36,5 @@ export default class Login {
     return res.status(200).send(verifyTk);
   };
 }
+
+export default Login;

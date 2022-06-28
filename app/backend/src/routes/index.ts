@@ -1,11 +1,12 @@
 import { Application as App } from 'express';
 import LoginMiddleware from '../middlewares/LoginMiddleware';
 import Login from '../controllers/Login.controller';
+import Team from '../controllers/Team.controller';
 
 const Routes = (app: App) => {
   const controllerLogin = new Login();
+  const controllerTeam = new Team();
 
-  app.get('/', (_req, res) => res.status(200).json('Sucesso'));
   app.post(
     '/login',
     LoginMiddleware.validEmail,
@@ -13,6 +14,8 @@ const Routes = (app: App) => {
     controllerLogin.userLogin,
   );
   app.get('/login/validate', controllerLogin.validateLogin);
+  app.get('/teams', controllerTeam.getAllTeams);
+  app.get('/teams/:id', controllerTeam.getOneTeam);
 };
 
 export default Routes;
