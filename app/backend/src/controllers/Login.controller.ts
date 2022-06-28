@@ -1,14 +1,15 @@
 import { NextFunction, Request, Response } from 'express';
 import { compare } from 'bcryptjs';
-import Users from '../database/models/user';
 import Token from '../auth/Token';
+import LoginService from '../services/Login.service';
 
 class Login {
   private jwtToken = new Token();
+  private service = new LoginService();
 
   userLogin = async (req: Request, res: Response, _next: NextFunction) => {
     const { email, password } = req.body;
-    const findUser = await Users.findOne({ where: { email } });
+    const findUser = await this.service.getOneUser(email);
     if (!findUser) {
       return res.status(401).json({ message: 'Incorrect email or password' });
     }
