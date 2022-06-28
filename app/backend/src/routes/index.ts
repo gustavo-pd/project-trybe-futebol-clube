@@ -18,7 +18,7 @@ const Routes = (app: App) => {
   app.get('/login/validate', controllerLogin.validateLogin);
   app.get('/teams', controllerTeam.getAllTeams);
   app.get('/teams/:id', controllerTeam.getOneTeam);
-  app.get('/matches', controllerMatch.getAllMatches);
+  app.get('/matches', controllerMatch.getInProgressMatches);
 };
 
 export default Routes;

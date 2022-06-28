@@ -4,10 +4,17 @@ import MatchesService from '../services/Match.service';
 class Match {
   private service = new MatchesService();
 
-  getAllMatches = async (_req: Request, res: Response, next: NextFunction) => {
+  getInProgressMatches = async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const allMatches = await this.service.getAllMatches();
-      return res.status(200).json(allMatches);
+      let matches = [];
+      const { inProgress } = req.query;
+      if (!inProgress) {
+        matches = await this.service.getAllMatches();
+      } else {
+        const query = inProgress !== 'false';
+        matches = await this.service.getInProgressMatches(query);
+      }
+      return res.status(200).json(matches);
     } catch (err) {
       next(err);
     }

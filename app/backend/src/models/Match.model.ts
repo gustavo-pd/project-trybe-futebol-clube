@@ -10,6 +10,17 @@ class Match {
       ] });
     return matches;
   };
+
+  getInProgressMatches = async (query: boolean) => {
+    const matches = await Matches.findAll({ where: { inProgress: query },
+      include:
+        [
+          { model: Team, as: 'teamHome', attributes: ['teamName'] },
+          { model: Team, as: 'teamAway', attributes: ['teamName'] },
+        ],
+    });
+    return matches;
+  };
 }
 
 export default Match;
