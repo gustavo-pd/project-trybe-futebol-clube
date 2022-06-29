@@ -31,6 +31,10 @@ class Match {
   updateProgressMatch = async (id: string) => {
     await Matches.update({ inProgress: false }, { where: { id } });
   };
+
+  editMatch = async (id: string, homeTeamGoals: number, awayTeamGoals: number) => {
+    await Matches.update({ homeTeamGoals, awayTeamGoals }, { where: { id } });
+  };
 }
 
 export default Match;

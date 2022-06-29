@@ -12,4 +12,6 @@ router.post('/', MatchMiddleware.validTeams, controller.createMatch);
 
 router.patch('/:id/finish', controller.updateProgressMatch);
 
+router.patch('/:id', controller.editMatch);
+
 export default router;

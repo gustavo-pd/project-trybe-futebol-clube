@@ -25,6 +25,10 @@ class Match {
   updateProgressMatch = async (id: string) => {
     await this.model.updateProgressMatch(id);
   };
+
+  editMatch = async (id: string, homeTeamGoals: number, awayTeamGoals: number) => {
+    await this.model.editMatch(id, homeTeamGoals, awayTeamGoals);
+  };
 }
 
 export default Match;
