@@ -1,3 +1,4 @@
+import IMatch from '../interfaces/IMatch.interface';
 import Matches from '../database/models/match';
 import Team from '../database/models/team';
 
@@ -20,6 +21,15 @@ class Match {
         ],
     });
     return matches;
+  };
+
+  createMatch = async (match: IMatch): Promise <IMatch> => {
+    const newMatch = await Matches.create(match);
+    return newMatch;
+  };
+
+  updateProgressMatch = async (id: string) => {
+    await Matches.update({ inProgress: false }, { where: { id } });
   };
 }
 

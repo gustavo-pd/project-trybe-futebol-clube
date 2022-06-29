@@ -1,5 +1,6 @@
 import { Application as App } from 'express';
 import LoginMiddleware from '../middlewares/LoginMiddleware';
+import MatchMiddleware from '../middlewares/MatchMiddleware';
 import Login from '../controllers/Login.controller';
 import Team from '../controllers/Team.controller';
 import Match from '../controllers/Match.controller';
@@ -19,6 +20,8 @@ const Routes = (app: App) => {
   app.get('/teams', controllerTeam.getAllTeams);
   app.get('/teams/:id', controllerTeam.getOneTeam);
   app.get('/matches', controllerMatch.getInProgressMatches);
+  app.post('/matches', MatchMiddleware.validTeams, controllerMatch.createMatch);
+  app.patch('matches/:id/finish', controllerMatch.updateProgressMatch);
 };
 
 export default Routes;
