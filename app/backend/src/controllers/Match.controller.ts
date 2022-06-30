@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from 'express';
-import IMatch from '../interfaces/IMatch.interface';
+import IMatchCreate from '../interfaces/IMatchCreate.interface';
 import MatchesService from '../services/Match.service';
 
 class Match {
@@ -28,7 +28,7 @@ class Match {
       if (!authorization) {
         return res.status(404).json({ message: 'Token not found' });
       }
-      const newMatch: IMatch = {
+      const newMatch: IMatchCreate = {
         homeTeam, awayTeam, homeTeamGoals, awayTeamGoals, inProgress,
       };
       const create = await this.service.createMatch(authorization, newMatch);

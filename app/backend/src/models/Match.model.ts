@@ -1,4 +1,4 @@
-import IMatch from '../interfaces/IMatch.interface';
+import IMatchCreate from '../interfaces/IMatchCreate.interface';
 import Matches from '../database/models/match';
 import Team from '../database/models/team';
 
@@ -23,7 +23,7 @@ class Match {
     return matches;
   };
 
-  createMatch = async (match: IMatch): Promise <IMatch> => {
+  createMatch = async (match: IMatchCreate): Promise <IMatchCreate> => {
     const newMatch = await Matches.create(match);
     return newMatch;
   };

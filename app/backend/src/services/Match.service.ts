@@ -1,4 +1,4 @@
-import IMatch from '../interfaces/IMatch.interface';
+import IMatchCreate from '../interfaces/IMatchCreate.interface';
 import MatchesModel from '../models/Match.model';
 import Token from '../auth/Token';
 
@@ -16,7 +16,7 @@ class Match {
     return matches;
   };
 
-  createMatch = async (auth: string, match: IMatch) => {
+  createMatch = async (auth: string, match: IMatchCreate) => {
     await this.token.tokenVerify(auth);
     const newMatch = await this.model.createMatch(match);
     return newMatch;

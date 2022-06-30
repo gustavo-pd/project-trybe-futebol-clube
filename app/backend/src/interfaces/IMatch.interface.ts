@@ -1,10 +1,8 @@
-interface IMatch {
-  id?: number;
-  homeTeam: number;
-  awayTeam: number;
-  homeTeamGoals: number;
-  awayTeamGoals: number;
-  inProgress: boolean;
+import Match from '../database/models/match';
+
+interface IMatch extends Match {
+  teamHome: object;
+  teamAway: object;
 }
 
 export default IMatch;
