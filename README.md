@@ -41,7 +41,7 @@
 <h2 id="howtouse">Como executar o projeto</h2>
 
   1. Clone o repositório
-    * `git clone https://github.com/tryber/sd-016-a-trybe-futebol-clube.git`.
+    * `git clone https://github.com/gustavo-pd/project-trybe-futebol-clube.git`.
     * Entre na pasta do repositório que você acabou de clonar:
       * `cd sd-016-a-trybe-futebol-clube`
 </br>
