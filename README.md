@@ -3,10 +3,10 @@
 <img src="./app/frontend/src/images/negative_logo.png" alt="Logo TFC">
 
 <h2>Índice</h2>
-<h3>- <a href="#context">Contexto</a></h3>
-<h3>- <a href="#tecnologies">Técnologias utilizadas</a></h3>
-<h3>- <a href="#development">Desenvolvimento</a></h3>
-<h3>- <a href="#howtouse">Como executar o projeto</a></h3>
+<h4>- <a href="#context">Contexto</a></h4>
+<h4>- <a href="#tecnologies">Técnologias utilizadas</a></h4>
+<h4>- <a href="#development">Desenvolvimento</a></h4>
+<h4>- <a href="#howtouse">Como executar o projeto</a></h4>
 
 <h2 id="context">Contexto</h2>
 
@@ -14,7 +14,7 @@
 <p>Esse projeto foi desenvolvido durante o curso da Trybe com o objetivo de treinar e consolidar os estudos de Docker, MySQL, Sequelize, Typescript, NodeJS, Express, MSC, POO e testes de integração em back-end, foi realizado em Junho de 2022, durante o módulo de Back-end.</p>
 <p>Neste projeto sou o autor de todo Back-end da aplicação, sendo o Front-end desenvolvido pela escola Trybe.</p>
 
-<h2>Técnologias utilizadas</h2>
+<h2 id="tecnologies">Técnologias utilizadas</h2>
 
 <ul>
   <li>Docker</li>
@@ -27,7 +27,7 @@
   <li>Testes de integração - Mocha, chai e sinon</li>
 </ul>
 
-<h2>Desenvolvimento</h2>
+<h2 id="development">Desenvolvimento</h2>
 
 <p>Neste projeto pude implementar todo o <b>back-end</b> <i>(./app/backend)</i> da aplicação TFC, de modo que o usuário possa ver a tabela atualizada e também o resultado de cada jogo.</p>
 <p>Para o usuário do administrador é possível adicionar mais partidas, atualizando automaticamente a tabela.</p>
@@ -38,7 +38,7 @@
 <img src="./app/frontend/src/images/tfccc.png" alt="TFC Home page">
 
 
-<h2>Como executar o projeto</h2>
+<h2 id="howtouse">Como executar o projeto</h2>
 
   1. Clone o repositório
     * `git clone https://github.com/tryber/sd-016-a-trybe-futebol-clube.git`.
