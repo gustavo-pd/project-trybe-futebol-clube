@@ -2,7 +2,15 @@
 
 <img src="./app/frontend/src/images/negative_logo.png" alt="Logo TFC">
 
-<h2>Contexto</h2>
+<h2>Índice</h2>
+<h3>
+<a href="#context">Contexto</a>
+<a href="#tecnologies">Técnologias utilizadas</a>
+<a href="#development">Desenvolvimento</a>
+<a href="#howtouse">Como executar o projeto</a>
+</h3>
+
+<h2 id="context">Contexto</h2>
 
 <p>O TFC foi desenvolvido para ser um site informativo sobre partidas e classificações de futebol!</p>
 <p>Esse projeto foi desenvolvido durante o curso da Trybe com o objetivo de treinar e consolidar os estudos de Docker, MySQL, Sequelize, Typescript, NodeJS, Express, MSC, POO e testes de integração em back-end, foi realizado em Junho de 2022, durante o módulo de Back-end.</p>
