@@ -7,7 +7,7 @@
 <p>O TFC foi desenvolvido para ser um site informativo sobre partidas e classificações de futebol!</p>
 <p>Neste projeto sou o autor de toda parte de back-end, sendo o front-end desenvolvido pela escola Trybe.</p>
 
-<h2>Técnologias usadas</h2>
+<h2>Técnologias utilizadas</h2>
 
 <ul>
   <li>Docker</li>
