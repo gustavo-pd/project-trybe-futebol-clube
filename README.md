@@ -21,8 +21,9 @@
   <li>Testes de integração - Mocha, chai e sinon</li>
 </ul>
 
-<h2>Neste projeto pude implementar todo o back-end da aplicação TFC, de modo que o usuário possa ver a tabela atualizada e também o resultado de cada jogo. 
-Foi utilizado o docker-compose com o papel de unir todas as partes e subir um projeto completo. Após isso, criei o banco de dados em MySQL, utilizando a ferramenta Sequelize para melhor perfomance e implementei as rotas necessárias no Back-end, utilizando NodeJS, Typescript e Express, implementando regras de negócio para popular adequadamente a tabela disponível no front-end que será exibida para a pessoa usuária do sistema.</h2> 
+<h4>Neste projeto pude implementar todo o back-end da aplicação TFC, de modo que o usuário possa ver a tabela atualizada e também o resultado de cada jogo.</br>
+Foi utilizado o docker-compose com o papel de unir todas as partes e subir um projeto completo. Após isso, criei o banco de dados em MySQL, utilizando a ferramenta Sequelize.</br>
+O Back-end foi desenvolvido utilizando NodeJS, Typescript e Express. Implementando regras de negócio para popular adequadamente a tabela disponível no front-end que será exibida para a pessoa usuária do sistema.</h4>
 
 <!-- Olá, Tryber!
 
