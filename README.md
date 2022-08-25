@@ -1,4 +1,6 @@
-# 🚧 README em construção 🚧
+<h1># ⚽ TFC - Trybe Futebol Clube! ⚽</h1>
+
+<h2>Termos e Acordos</h2>
 
 <!-- Olá, Tryber!
 
