@@ -1,6 +1,4 @@
-<h1>⚽ TFC - Trybe Futebol Clube! ⚽</h1>
-
-<img src="./app/frontend/src/images/negative_logo.png" alt="Tabela TFC">
+<img src="./app/frontend/src/images/negative_logo.png" alt="Logo TFC">
 
 <h2>Contexto</h2>
 
