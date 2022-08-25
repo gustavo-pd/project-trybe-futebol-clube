@@ -5,7 +5,8 @@
 <h2>Contexto</h2>
 
 <p>O TFC foi desenvolvido para ser um site informativo sobre partidas e classificações de futebol!</p>
-<p>Neste projeto sou o autor de toda parte de back-end, sendo o front-end desenvolvido pela escola Trybe.</p>
+<p>Esse projeto foi desenvolvido durante o curso da Trybe com o objetivo de treinar e consolidar os estudos de Docker, MySQL, Sequelize, Typescript, NodeJS, Express, MSC, POO e testes de integração em back-end, foi realizado em Junho de 2022, durante o módulo de Back-end.</p>
+<p>Neste projeto sou o autor de todo Back-end da aplicação, sendo o Front-end desenvolvido pela escola Trybe.</p>
 
 <h2>Técnologias utilizadas</h2>
 
