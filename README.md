@@ -3,12 +3,10 @@
 <img src="./app/frontend/src/images/negative_logo.png" alt="Logo TFC">
 
 <h2>Índice</h2>
-<h3>
-<a href="#context">Contexto</a>
-<a href="#tecnologies">Técnologias utilizadas</a>
-<a href="#development">Desenvolvimento</a>
-<a href="#howtouse">Como executar o projeto</a>
-</h3>
+<h3>- <a href="#context">Contexto</a></h3>
+<h3>- <a href="#tecnologies">Técnologias utilizadas</a></h3>
+<h3>- <a href="#development">Desenvolvimento</a></h3>
+<h3>- <a href="#howtouse">Como executar o projeto</a></h3>
 
 <h2 id="context">Contexto</h2>
 
