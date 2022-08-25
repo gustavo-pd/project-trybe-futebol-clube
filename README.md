@@ -4,8 +4,8 @@
 
 <h2>Contexto</h2>
 
-<h4>O TFC foi desenvolvido para ser um site informativo sobre partidas e classificações de futebol!</h4>
-<h4>Neste projeto sou o autor de toda parte de back-end, sendo o front-end desenvolvido pela escola Trybe.</h4>
+<p>O TFC foi desenvolvido para ser um site informativo sobre partidas e classificações de futebol!</p>
+<p>Neste projeto sou o autor de toda parte de back-end, sendo o front-end desenvolvido pela escola Trybe.</p>
 
 <h2>Técnologias usadas</h2>
 
