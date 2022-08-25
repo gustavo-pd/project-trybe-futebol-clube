@@ -24,8 +24,11 @@
 
 <p>Neste projeto pude implementar todo o <b>back-end</b> <i>(./app/backend)</i> da aplicação TFC, de modo que o usuário possa ver a tabela atualizada e também o resultado de cada jogo.</p>
 <p>Para o usuário do administrador é possível adicionar mais partidas, atualizando automaticamente a tabela.</p>
-<p>Foi utilizado o docker-compose com o papel de unir todas as partes e subir um projeto completo. Após isso, criei o banco de dados em MySQL, utilizando a ferramenta Sequelize.</p>
+<p>Foi utilizado o docker-compose com o papel de unir todas as partes e subir um projeto completo.</p>
+<p>Banco de dados criado em MySQL, utilizando a ferramenta Sequelize. Foram adicionados dados por via de Seeders para popular a tabela e mostrar o funcionamento.</p>
 <p>O Back-end foi desenvolvido utilizando NodeJS, Typescript e Express. Implementando regras de negócio para popular adequadamente a tabela disponível no front-end que será exibida para a pessoa usuária do sistema.</p>
+
+<img src="./app/frontend/src/images/negative_logo.png" alt="Logo TFC">
 
 <!-- Olá, Tryber!
 
