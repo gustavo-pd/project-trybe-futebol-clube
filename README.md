@@ -30,17 +30,51 @@
 
 <img src="./app/frontend/src/images/tfccc.png" alt="TFC Home page">
 
-<!-- Olá, Tryber!
 
-Esse é apenas um arquivo inicial para o README do seu projeto.
+<h2>Como executar o projeto</h2>
 
-É essencial que você preencha esse documento por conta própria, ok?
+  1. Clone o repositório
+    * `git clone https://github.com/tryber/sd-016-a-trybe-futebol-clube.git`.
+    * Entre na pasta do repositório que você acabou de clonar:
+      * `cd sd-016-a-trybe-futebol-clube`
 
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
+  2. Instale as dependências
+    * `npm install`
 
-⚠️ IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
+  3. Rode o Docker para unir e subir todas as partes
+    * `npm run compose:up`
 
--->
+    Para derrubar o Docker utilize o comando
+    * `npm run compose:down`
+
+  4. O front-end irá rodar na porta 3000, e o back-end na porta 3001, para acessar o front-end, acesse no seu navegador
+  * `http://localhost:3000`
+
+  5. Para fazer login com o admin e poder gerenciar partidas
+  * Login: `admin@admin.com` Password: `secret_admin`
+
+  Para fazer login como usuário
+  * Login: `user@user.com` Password: `secret_user`
+  
+
+
+
+
+Na sua máquina você deve ter:
+	
+ - Sistema Operacional Distribuição Unix
+ - Node versão 16  
+ - Docker
+ - Docker-compose versão 1.29.2
+	
+	
+➡️ O `node` deve ter versão igual ou superior à `16.15.0 LTS`. 
+	* Para instalar o nvm, [acesse esse link](https://github.com/nvm-sh/nvm#installing-and-updating);
+	*Rode os comandos abaixo para instalar a versão correta de `node` e usá-la:
+		* `nvm install 16 --lts`
+		* `nvm use 16`
+		* `nvm alias default 16` 
+
+➡️ O`docker-compose` deve ter versão igual ou superior à`ˆ1.29.2`:
+	* Use esse [link de referência para realizar a instalação corretamente no ubuntu](https://app.betrybe.com/course/back-end/docker/orquestrando-containers-com-docker-compose/6e8afaef-566a-47f2-9246-d3700db7a56a/conteudo/0006a231-1a10-48a2-ac82-9e03e205a231/instalacao/abe40727-6310-4ad8-bde6-fd1e919dadc0?use_case=side_bar);
+	* Acesse o [link da documentação oficial com passos para desinstalar] (https://docs.docker.com/compose/install/#uninstallation) caso necessário.
