@@ -39,27 +39,23 @@
       * `cd sd-016-a-trybe-futebol-clube`
 </br>
 
-  2. Instale as dependências
+  2. Instale as dependências:
     * `npm install`
 </br>
 
-  3. Rode o Docker para unir e subir todas as partes
-    * `npm run compose:up`
+  3. Rode o Docker para unir e subir todas as partes:
+    * `npm run compose:up` para upar ou `npm run compose:down` para derrubar
 </br>
 
-    Para derrubar o Docker utilize o comando
-    * `npm run compose:down`
-</br>
-
-  4. O front-end irá rodar na porta 3000, e o back-end na porta 3001, para acessar o front-end, acesse no seu navegador
+  4. O front-end irá rodar na porta 3000, e o back-end na porta 3001, para acessar o front-end, acesse no seu navegador:
   * `http://localhost:3000`
 </br>
 
-  5. Para fazer login com o admin e poder gerenciar partidas
+  5. Para fazer login com o admin e poder gerenciar partidas:
   * Login: `admin@admin.com` Password: `secret_admin`
 </br>
 
-  Para fazer login como usuário
+  Para fazer login como usuário:
   * Login: `user@user.com` Password: `secret_user`
 </br>
 </br>
