@@ -9,7 +9,6 @@
 
 <h2>Técnologias usadas</h2>
 
-<h4>Desenvolvido utilizando:
 <ul>
   <li>Docker</li>
   <li>MySQL e Sequelize</li>
@@ -21,7 +20,9 @@
   <li>Testes de integração - Mocha, chai e sinon</li>
 </ul>
 
-<h4>Neste projeto pude implementar todo o back-end da aplicação TFC, de modo que o usuário possa ver a tabela atualizada e também o resultado de cada jogo.</br></br>
+<h2>Desenvolvimento</h2>
+
+<h4>  Neste projeto pude implementar todo o back-end da aplicação TFC, de modo que o usuário possa ver a tabela atualizada e também o resultado de cada jogo.</br></br>
 Foi utilizado o docker-compose com o papel de unir todas as partes e subir um projeto completo. Após isso, criei o banco de dados em MySQL, utilizando a ferramenta Sequelize.</br></br>
 O Back-end foi desenvolvido utilizando NodeJS, Typescript e Express. Implementando regras de negócio para popular adequadamente a tabela disponível no front-end que será exibida para a pessoa usuária do sistema.</h4>
 
