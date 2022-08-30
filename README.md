@@ -35,7 +35,7 @@
 <p>Banco de dados criado em MySQL, utilizando a ferramenta Sequelize. Foram adicionados dados por via de Seeders para popular a tabela e mostrar o funcionamento.</p>
 <p>O Back-end foi desenvolvido utilizando NodeJS, Typescript e Express. Implementando regras de negócio para popular adequadamente a tabela disponível no front-end que será exibida para a pessoa usuária do sistema.</p>
 
-<img src="./app/frontend/src/images/tfccc.png" alt="TFC Home page">
+<img src="./app/frontend/src/images/tfc.gif" alt="TFC Home page">
 
 
 <h2 id="howtouse">Como executar o projeto</h2>
