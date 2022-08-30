@@ -55,7 +55,9 @@
 </br>
 
   4. O front-end irá rodar na porta 3000, e o back-end na porta 3001, para acessar o front-end, acesse no seu navegador:
-  * `http://localhost:3000`
+  * front-end: `http://localhost:3000`
+  ou
+  * back-end: `http://localhost:3001`
 </br>
 
   5. Para fazer login com o admin e poder gerenciar partidas:
